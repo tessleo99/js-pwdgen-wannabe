@@ -11,5 +11,7 @@ let divison = number1 / number2; //DIVISIONE TRA I DUE NUMERI
 
 let random = Math.floor(Math.random() * 10) + 1; //GENERARE UN NMERO RANDOMICO 1<x<10
 
-let password_generation = `(firstname + lastname + favouritecolor + divison + random);` //GENERARE LA PASSWORD
+let password_generation = (firstname + lastname + favouritecolor + divison + random); //GENERARE LA PASSWORD
 console.log(password_generation); //STAMPARE LA PASSWORD IN CONSOLE
+
+document.getElementById("p-password-generation").innerHTML = password_generation; //COLLEGAMENTO HTML
